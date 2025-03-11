@@ -65,4 +65,4 @@ jobs:
           app-name: 'imageprocessor7'
           slot-name: 'Production'
           publish-profile: ${{ secrets.azure_imageprocessor7 }}
-          package: StreamlitImageProcessingApp.zip
+          package: release.zip
