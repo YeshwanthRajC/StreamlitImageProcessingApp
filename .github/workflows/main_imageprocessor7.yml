@@ -58,10 +58,10 @@ jobs:
       - name: Unzip artifact for deployment
         run: unzip release.zip
 
-      - name: 'Deploy to Azure Web App'
+      - name: 'imageprocessor7'
         uses: azure/webapps-deploy@v2
         id: deploy-to-webapp
         with:
           app-name: 'imageprocessor7'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E4037BEFF281493F8D8CB07AB029B07B }}
+          publish-profile: ${{ secrets.azure_imageprocessor7 }}
